@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" href="sales.css">
+    <title>Sales Data</title>
+</head>
+<body>
+    <main>
+        <h1>Sales Data</h1>
+            <script src="sales.js"></script>
+
+        <h2>Sales by Quarter</h2>
+            <script>
+                //Display each quarter's sum for all regions
+                for (let i = 0; i < 4; i++) {
+                    document.write("Q", (i+1), ": $", quarterSum[i]+"<br>");
+                }
+            </script>
+
+        <h2>Sales by Region</h2>
+            <script>
+                //Display each region's sum for all quarters
+                for (let i = 0; i < 5; i++) {
+                    document.write("Region ", (i+1), ": $", regionSum[i]+"<br>");
+                }
+            </script>
+            
+        <h2>Total Sales</h2>
+            <script>
+                //Display the sum of all regions in all quarters
+                document.write("$",total);
+            </script>        
+    </main>
+</body>
+</html>
